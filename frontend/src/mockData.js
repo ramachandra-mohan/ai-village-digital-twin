@@ -1,0 +1,31 @@
+export const MOCK_DASHBOARD = {
+  village: { name: 'Rampur Kalan', state: 'Karnataka, India', population: 2104, households: 428, area: '12.4 km²', farmland: '864 acres' },
+  overallScore: 68,
+  scoreDelta: 12,
+  sectors: [
+    { key: 'water', label: 'Water', icon: '💧', score: 35, headline: 'Analyzing water sources, usage and risk...', insights: ['Groundwater levels declining (-3.2 m/year)', 'Existing tanks underutilized (40% capacity)', 'Rainwater harvesting can meet 70% of annual demand'] },
+    { key: 'health', label: 'Healthcare', icon: '➕', score: 42, headline: 'Analyzing health records and environmental data...', insights: ['Risk of water-borne diseases increases in monsoon', 'Low immunization coverage (62%)', 'Need for primary health center upgrade'] },
+    { key: 'agriculture', label: 'Agriculture', icon: '🌾', score: 54, headline: 'Analyzing soil, crop and weather patterns...', insights: ['High potential for millet and pulse cultivation', 'Soil improvement needed (low organic carbon)', 'Risk of 18% yield loss due to changing rainfall'] },
+    { key: 'infrastructure', label: 'Infrastructure', icon: '🏗️', score: 81, headline: 'Analyzing roads, buildings and connectivity...', insights: ['2.4 km of internal roads in poor condition', 'School infrastructure needs renovation', 'Improve last-mile connectivity for markets and healthcare'] },
+    { key: 'education', label: 'Education', icon: '🎓', score: 72, headline: 'Analyzing school infrastructure and attendance...', insights: ['320 students across 2 schools', 'Good condition, needs digital learning center', 'Attendance improving year-on-year'] },
+    { key: 'environment', label: 'Environment', icon: '🌳', score: 66, headline: 'Analyzing land use and green cover...', insights: ['Good green cover overall', 'Protect water bodies from encroachment', 'Prevent deforestation near farmland edges'] },
+  ],
+  recommendations: [
+    { id: 1, title: 'Invest in rainwater harvesting', detail: 'Benefits 2,100 residents | +18% agricultural yield', cost: '₹20 Lakhs', impact: 'High' },
+    { id: 2, title: 'Upgrade primary health center', detail: 'Reduce disease burden | 30% better health outcomes', cost: '₹15 Lakhs', impact: 'High' },
+    { id: 3, title: 'Expand solar microgrid', detail: 'Reliable clean energy | Reduce 120 tons CO₂/year', cost: '₹40 Lakhs', impact: 'Medium' },
+    { id: 4, title: 'Improve irrigation systems', detail: 'Increase crop yield by 25%', cost: '₹10 Lakhs', impact: 'Medium' },
+    { id: 5, title: 'Upgrade rural roads (3.2 km)', detail: 'Improves market access, school attendance and healthcare reach', cost: '₹30 Lakhs', impact: 'Medium' },
+  ],
+  projectedImpact: [
+    { label: 'Agricultural Yield', value: '+18%', icon: '🌾', tone: 'good' },
+    { label: 'Water Stress', value: '-40%', icon: '💧', tone: 'good' },
+    { label: 'Health Risk', value: '-30%', icon: '❤️', tone: 'good' },
+    { label: 'Lives Positively Impacted', value: '2,100', icon: '👥', tone: 'neutral' },
+    { label: 'School Attendance', value: '+25%', icon: '🎓', tone: 'good' },
+    { label: 'Local Jobs', value: '+60', icon: '💼', tone: 'neutral' },
+  ],
+  insight: 'This village shows strong potential for sustainable growth. Improving water security and irrigation can increase agricultural yield by 18% and positively impact 2,100 residents.',
+  sdgs: [1, 3, 4, 6, 8, 13, 15, 17],
+  generatedAt: 'just now',
+};
